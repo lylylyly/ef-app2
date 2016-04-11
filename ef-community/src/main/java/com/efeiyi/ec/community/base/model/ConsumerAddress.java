@@ -24,7 +24,7 @@ public class ConsumerAddress implements Serializable {
     private String status;   //1 正常的 2 默认的
     private  String consignee; //收货人姓名
     @Id
-    @GenericGenerator(name = "id", strategy = "com.ming800.core.p.util.M8idGenerator")
+    @GenericGenerator(name = "id", strategy = "com.ming800.core.p.model.M8idGenerator")
     @GeneratedValue(generator = "id")
     public String getId() {
         return id;
